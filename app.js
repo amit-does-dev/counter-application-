@@ -1,12 +1,5 @@
-console.log("JavaScript file loaded!");
+console.log("Checking is the JavaScript file loaded!");
 
-// if(click === "add")
-// {
-//     count = count+1;
-// }
-// else{
-//     count = 0;
-// }
 
 let count = document.querySelector("#number");
 count.style.color = "red";
@@ -18,3 +11,7 @@ increase.addEventListener("click", function () {
     let newValue = currentValue + 1;
     count.innerText = newValue;
   });
+
+ reset.addEventListener("click",function(){
+    count.innerText = 0;
+ })
